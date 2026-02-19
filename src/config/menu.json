@@ -1,0 +1,73 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Services",
+      "url": "/#services"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "FAQ",
+      "url": "/faq"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Company",
+      "menu": [
+        {
+          "text": "About Us",
+          "url": "/#about"
+        },
+        {
+          "text": "Services",
+          "url": "/#services"
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "menu": [
+        {
+          "text": "Cloud Infrastructure",
+          "url": "/#services"
+        },
+        {
+          "text": "CI/CD Pipelines",
+          "url": "/#services"
+        },
+        {
+          "text": "Security & Compliance",
+          "url": "/#services"
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy"
+        }
+      ]
+    }
+  ]
+}

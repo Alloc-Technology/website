@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "Alloc Technology",
+    "base_url": "https://alloc.tech",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "50",
+    "logo_text": "Alloc Technology"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Get Started",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "footer_content": "Automate. Scale. Secure. We build infrastructure that scales with your ambition.",
+    "copyright": "© 2026 Alloc Technology. All rights reserved."
+  },
+
+  "metadata": {
+    "meta_author": "Alloc Technology",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "DevOps and Cloud Engineering services - Automate, Scale, and Secure your infrastructure."
+  },
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  }
+}
