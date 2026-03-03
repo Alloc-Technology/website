@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, meta_title, description, image } = post.data;
+const { title, meta_title, description, image, canonical, redirect_to } = post.data;
 ---
 
 <Base
@@ -24,6 +24,17 @@ const { title, meta_title, description, image } = post.data;
   meta_title={meta_title}
   description={description}
   image={image}
+  canonical={canonical}
 >
-  <PostSingle post={post} />
+  {redirect_to && (
+    <>
+      <meta http-equiv="refresh" content={`0;url=${redirect_to}`} />
+      <script is:inline define:vars={{ redirectTo: redirect_to }}>window.location.href = redirectTo;</script>
+      <div style="display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column;font-family:sans-serif;">
+        <p>Redirecting to Medium...</p>
+        <p><a href={redirect_to}>Click here if not redirected</a></p>
+      </div>
+    </>
+  )}
+  {!redirect_to && <PostSingle post={post} />}
 </Base>
