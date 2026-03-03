@@ -8,7 +8,7 @@ banner:
     label: "Get Started"
     link: "/contact"
   button2:
-    enable: true
+    enable: false
     label: "Our Services"
     link: "/#services"
 
@@ -40,7 +40,7 @@ services:
   - title: "Cloud Infrastructure & DevOps"
     content: "Design and manage scalable cloud architectures on AWS, Azure, and GCP. We implement infrastructure as code, containerization with Docker and Kubernetes, and automated scaling to ensure your applications perform optimally under any load."
     images:
-    #- "/images/service-slide-1.png"
+      #- "/images/service-slide-1.png"
       - "/images/cloud-computing.png"
     button:
       enable: true
