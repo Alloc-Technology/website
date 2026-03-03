@@ -177,12 +177,29 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
       />
       <p class="mt-3" set:html={workflow?.description} />
     </div>
-    <Image
-      src={workflow!.image}
-      alt="workflow image"
-      width={1920}
-      height={414}
-    />
+    
+    <!-- Tools Marquee -->
+    <div class="marquee">
+      <div class="marquee-content">
+        <img src="/images/logos/github.svg" alt="GitHub" />
+        <img src="/images/logos/gitlab.svg" alt="GitLab" />
+        <img src="/images/logos/docker.svg" alt="Docker" />
+        <img src="/images/logos/kubernetes.svg" alt="Kubernetes" />
+        <img src="/images/logos/aws.svg" alt="AWS" />
+        <img src="/images/logos/jenkins.svg" alt="Jenkins" />
+        <img src="/images/logos/grafana.svg" alt="Grafana" />
+        <img src="/images/logos/terraform.svg" alt="Terraform" />
+        <!-- Duplicate for seamless loop -->
+        <img src="/images/logos/github.svg" alt="GitHub" />
+        <img src="/images/logos/gitlab.svg" alt="GitLab" />
+        <img src="/images/logos/docker.svg" alt="Docker" />
+        <img src="/images/logos/kubernetes.svg" alt="Kubernetes" />
+        <img src="/images/logos/aws.svg" alt="AWS" />
+        <img src="/images/logos/jenkins.svg" alt="Jenkins" />
+        <img src="/images/logos/grafana.svg" alt="Grafana" />
+        <img src="/images/logos/terraform.svg" alt="Terraform" />
+      </div>
+    </div>
   </section>
 
   <!-- Call to Action -->
