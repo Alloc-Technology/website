@@ -7,6 +7,6 @@ info:
   description: Whether you're looking to modernize your existing systems or build from scratch, we'd love to hear about your project. Our team typically responds within 24 hours.
   contacts:
     - "Phone: +977-9845730119"
-    - "Mail: [hello@alloc.tech](mailto:hello@alloc.tech)"
+    - "Mail: [admin@alloc.tech](mailto:admin@alloc.tech)"
     - "Address: Serving clients globally - Remote & on-site"
 ---

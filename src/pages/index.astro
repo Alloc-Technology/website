@@ -24,6 +24,15 @@ const homepage = (await getEntry(
   "-index"
 )) as CollectionEntry<"homepage">;
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
+
+const logos = Object.keys(import.meta.glob('/public/images/logos/*.svg', { eager: true }))
+  .map(path => {
+    const filename = path.split('/').pop()?.replace('.svg', '') || '';
+    return {
+      path: `/images/logos/${filename}.svg`,
+      alt: filename.charAt(0).toUpperCase() + filename.slice(1)
+    };
+  });
 ---
 
 <Base>
@@ -181,23 +190,8 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
     <!-- Tools Marquee -->
     <div class="marquee">
       <div class="marquee-content">
-        <img src="/images/logos/github.svg" alt="GitHub" />
-        <img src="/images/logos/gitlab.svg" alt="GitLab" />
-        <img src="/images/logos/docker.svg" alt="Docker" />
-        <img src="/images/logos/kubernetes.svg" alt="Kubernetes" />
-        <img src="/images/logos/aws.svg" alt="AWS" />
-        <img src="/images/logos/jenkins.svg" alt="Jenkins" />
-        <img src="/images/logos/grafana.svg" alt="Grafana" />
-        <img src="/images/logos/terraform.svg" alt="Terraform" />
-        <!-- Duplicate for seamless loop -->
-        <img src="/images/logos/github.svg" alt="GitHub" />
-        <img src="/images/logos/gitlab.svg" alt="GitLab" />
-        <img src="/images/logos/docker.svg" alt="Docker" />
-        <img src="/images/logos/kubernetes.svg" alt="Kubernetes" />
-        <img src="/images/logos/aws.svg" alt="AWS" />
-        <img src="/images/logos/jenkins.svg" alt="Jenkins" />
-        <img src="/images/logos/grafana.svg" alt="Grafana" />
-        <img src="/images/logos/terraform.svg" alt="Terraform" />
+        {logos.map(logo => <img src={logo.path} alt={logo.alt} />)}
+        {logos.map(logo => <img src={logo.path} alt={logo.alt} />)}
       </div>
     </div>
   </section>
