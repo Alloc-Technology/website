@@ -18,6 +18,7 @@
     "@astrojs/react": "4.4.0",
     "@astrojs/sitemap": "^3.6.0",
     "@digi4care/astro-google-tagmanager": "^1.6.0",
+    "@fontsource/inter": "^5.2.8",
     "@justinribeiro/lite-youtube": "^1.8.2",
     "@tailwindcss/vite": "^4.1.14",
     "astro": "5.14.4",

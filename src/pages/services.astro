@@ -1,0 +1,93 @@
+---
+import Base from "@/layouts/Base.astro";
+import { Image } from "astro:assets";
+---
+
+<Base title="Services" meta_title="Cloud Infrastructure & DevOps Services - Alloc Technology" description="Expert DevOps and cloud infrastructure services including CI/CD, security, and site reliability engineering.">
+  <section class="section">
+    <div class="container">
+      <h1 class="text-center font-normal">Our Services</h1>
+      <p class="mt-4 text-center text-lg text-gray-600">Comprehensive DevOps and cloud infrastructure solutions tailored to your business needs.</p>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-2">
+        
+        <div class="feature-card rounded-xl bg-white p-8 text-center">
+          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+            </svg>
+          </div>
+          <h3 class="h5">Cloud Infrastructure & DevOps</h3>
+          <p class="mt-3">Design and manage scalable cloud architectures on AWS, Azure, and GCP. We implement infrastructure as code, containerization with Docker and Kubernetes, and automated scaling.</p>
+          <ul class="mt-4 text-left text-sm text-gray-600">
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Cloud Architecture Design</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Infrastructure as Code (Terraform)</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Containerization (Docker & Kubernetes)</li>
+            <li class="flex items-center"><span class="mr-2 text-primary">✓</span> Cloud Migration</li>
+          </ul>
+        </div>
+
+        <div class="feature-card rounded-xl bg-white p-8 text-center">
+          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+            </svg>
+          </div>
+          <h3 class="h5">CI/CD Pipelines</h3>
+          <p class="mt-3">Accelerate your release cycles with automated continuous integration and deployment. We build robust pipelines with GitHub Actions, GitLab CI, Jenkins, or CircleCI.</p>
+          <ul class="mt-4 text-left text-sm text-gray-600">
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Pipeline Development</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Automated Testing</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Deployment Strategies</li>
+            <li class="flex items-center"><span class="mr-2 text-primary">✓</span> Artifact Management</li>
+          </ul>
+        </div>
+
+        <div class="feature-card rounded-xl bg-white p-8 text-center">
+          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="h5">Security & Compliance</h3>
+          <p class="mt-3">Embed security into your development process with DevSecOps. From threat modeling to compliance frameworks (SOC 2, HIPAA, GDPR), we secure your infrastructure.</p>
+          <ul class="mt-4 text-left text-sm text-gray-600">
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> DevSecOps Integration</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Vulnerability Scanning</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Compliance Audits</li>
+            <li class="flex items-center"><span class="mr-2 text-primary">✓</span> Security Hardening</li>
+          </ul>
+        </div>
+
+        <div class="feature-card rounded-xl bg-white p-8 text-center">
+          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="h5">Site Reliability Engineering</h3>
+          <p class="mt-3">Keep your systems running smoothly with proactive monitoring, incident response, and reliability engineering. We minimize downtime through observability.</p>
+          <ul class="mt-4 text-left text-sm text-gray-600">
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Monitoring & Observability</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Incident Response</li>
+            <li class="mb-2 flex items-center"><span class="mr-2 text-primary">✓</span> Performance Optimization</li>
+            <li class="flex items-center"><span class="mr-2 text-primary">✓</span> Chaos Engineering</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2 class="h3">Ready to Transform Your Infrastructure?</h2>
+      <p class="mt-4 text-lg text-gray-600">Let's discuss how we can help you automate, scale, and secure your cloud operations.</p>
+      <a href="/contact" class="btn btn-primary mt-8">Get Started</a>
+    </div>
+  </section>
+</Base>
